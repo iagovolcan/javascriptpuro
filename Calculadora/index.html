@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <section class="box">
+            <div class="tela"></div>
+            <div class="tabela">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td onclick="limpar()">C</td>
+                            <td onclick="numero('/')">&divide;</td>
+                            <td onclick="numero('*')">x</td>
+                            <td onclick="numero('-')">-</td>
+                        </tr>
+                        <tr>
+                            <td onclick="numero(7)">7</td>
+                            <td onclick="numero(8)">8</td>
+                            <td onclick="numero(9)">9</td>
+                            <td onclick="numero('+')">+</td>
+                        </tr>
+                        <tr>
+                            <td onclick="numero(4)">4</td>
+                            <td onclick="numero(5)">5</td>
+                            <td onclick="numero(6)">6</td>
+                            <td onclick="apagar()"><</td>
+                        </tr>
+                        <tr>
+                            <td onclick="numero(1)">1</td>
+                            <td onclick="numero(2)">2</td>
+                            <td onclick="numero(3)">3</td>
+                            <td rowspan="2" onclick="resultado()">=</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" onclick="numero(0)">0</td>
+                            <td onclick="numero('.')">,</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
